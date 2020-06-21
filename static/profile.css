@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans")
+*
+{
+	outline: none !important;
+}
+html
+{
+	scroll-behavior: smooth;
+}
+body
+{
+	font-variant: 'Poppins', sans-serif;
+}
+header
+{
+	position: relative;
+	z-index: 1000000;
+}
+p
+{
+	font-size: 1.15rem;
+}
+.navbar
+{
+	background: #000 !important; 
+	transition: 5s;
+	height: 50px;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link 
+{
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    border-radius: none;
+    border-width: 2px;
+    padding: 5px;
+    width: auto;
+    text-align: center;
+    margin-right: 6px;
+
+}
+.navbar-light .navbar-nav .active>.nav-link:hover
+{
+	color: #000;
+}
+.navbar-light .navbar-nav .nav-link 
+{
+    color: #fff;
+    border-bottom: 2px solid #000;
+    border-radius: none;
+    border-width: 2px;
+    padding: 5px;
+    width: auto;
+    text-align: center;
+    margin-right: 6px;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus
+{
+	color: #fff;
+	background: #000;
+    border-bottom: 2px solid #fff;
+    border-radius: none;
+    border-width: 2px;
+    padding: 5px;
+    width: auto;
+    text-align: center;
+    margin-right: 6px;
+    transition: 0.5s;
+}
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:visited
+{
+    color: rgba(255,255,255,1);
+    font-size: 1rem;
+    font-weight: 600;
+}
+.headerText
+{
+	color: #fff;
+}
+.headerText h2
+{
+	font-size: 2.5rem;
+	margin-bottom: 20px;
+}
+.logincontact 
+{
+    position: relative;
+    padding: 100px 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background: url(banner2.jpg);
+    background-size: cover;
+    min-height: 100vh;
+}
+.logincontact:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(#000,transparent);
+    pointer-events: none;
+
+}
+.logincontact:after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(360deg,#000,transparent);
+    pointer-events: none;
+
+}
+.logincontact form
+{
+    position: relative;
+    z-index: 1000;
+}
+.logincontact .form-control
+{
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,.2);
+    height: 40px;
+    min-width: 400px;
+    align-content: center;
+    align-items: center;
+    border-radius: 0;
+    background: rgba(0,0,0,.6);
+    color: #fff;
+    font-size: 1.25rem;
+}
+.logincontact .form-control:hover,
+.logincontact .form-control:focus
+{
+    border: none;
+    border-bottom: 2px solid rgba(255,255,255,1);
+    box-shadow: none;
+}
+.logincontact h5
+{
+    color: #fff;
+}
+.logincontact textarea
+{
+	margin-left: 35%;
+	resize: both;
+	width: 500px;
+	height: 200px;
+	background-color: #fff;
+}
+.btnd4
+{
+	position: relative;
+	color: #fff;
+	background: transparent;
+    border: 2px solid rgba(255,255,255,.2);
+    border-radius: 5px;
+    border-width: 2px;
+    padding: 5px;
+    width: 120px;
+    text-align: center;
+    margin-left: 35%;
+}
+.btnd4:hover,
+.btnd4:focus
+{
+	position: relative;
+	color: #000;
+	background: #fff;
+    border: 2px solid rgba(255,255,255,1);
+    border-radius: 5px;
+    border-width: 2px;
+    padding: 5px;
+    width: 120px;
+    text-align: center;
+    margin-right: 6px;
+}
+footer
+{
+	background: #000;
+	padding: 50px 0 0;
+}
+.sci
+{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.sci li
+{
+	list-style: none;
+	margin: 0 20px;
+}
+.sci li a
+{
+	color: #777;
+	font-size: 2em;
+	transition: 0.5s;
+}
+.sci li a:hover,
+.sci li a:focus
+{
+	color: #fff;
+}
+.cpryt
+{
+	margin-top: 20px;
+	text-align: center;
+	color: #777;
+}
+@media (min-width: 992px)
+{
+	.navbar-expand-lg .navbar-nav .nav-link 
+	{
+	    padding-right: .5rem;
+	    padding-left: .5rem;
+	}
+}
+@media (max-width: 992px)
+{
+	.navbar-light .navbar-toggler 
+	{
+		background: #fff;
+		border-radius:2px;
+	}
+	.contentBox h1
+	{
+		font-size: 2rem;
+		padding: 20px 0;
+	}
+	.contentBox p
+	{
+		font-size: 1rem;
+		padding: 20px 0;
+	}
+	.navbar-expand-lg .navbar-nav .nav-link 
+	{
+	    padding-right: .5rem;
+	    padding-left: .5rem;
+	}
+	.headerText h2 
+	{
+	    font-size: 2rem;
+	}
+	.logincontact
+	{
+		padding: 100px,0;
+	}
+	.logincontact textarea
+	{
+		margin-left: 7%;
+		width: 320px;
+		height: 130px;
+		resize: both;
+		overflow: auto;
+	}
+	.logincontact h5
+	{
+		font-size: .75rem;
+	}
+	.logincontact .content
+	{
+		margin-left: 10%;
+	}
+	.btnd4
+	{
+		align-items: center;
+	}
+	footer 
+	{
+	    background: #000;
+	    padding: 0 0 20px;
+	}
+	.sci li 
+	{
+	    list-style: none;
+	    margin: 0 10px;
+	}
+	.sci li a
+	{
+		color: #777;
+		font-size: 1.5rem;
+		transition: 0.5s;
+	}
+	.cpryt 
+	{
+	    margin-top: 20px;
+	    text-align: center;
+	    color: #777;
+	    font-size: 0.75rem;
+	}
+	.sec2
+	{
+		height: auto;
+		padding: 40px 0;
+	}
+}
